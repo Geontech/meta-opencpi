@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 
 SRC_URI = "file://${MACHINE}"
 
-RDPENDS_${PN} += "bash glibc"
+RDPENDS_${PN} += "glibc"
 
 FILES_${PN} = "${ROOT_HOME}"
 

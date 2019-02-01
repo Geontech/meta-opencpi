@@ -3,6 +3,7 @@ inherit core-image
 SUMMARY = "OpenCPI Base Image"
 
 IMAGE_INSTALL_append = "\
+    bash \
     opencpi-runtime \
 "
 
@@ -15,5 +16,8 @@ WKS_FILES = "opencpi-runtime-image.wks"
 IMAGE_FEATURES += "\
     ssh-server-openssh \
     "
+
 # GDB is hugely helpful in OpenCPI development
 EXTRA_IMAGE_FEATURES += "tools-debug"
+
+CORE_IMAGE_EXTRA_INSTALL += "devmem2 vim vim-vimrc htop"
