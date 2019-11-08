@@ -14,8 +14,9 @@ INSANE_SKIP_${PN} += "file-rdeps"
 S = "${WORKDIR}"
 
 COMPATIBLE_MACHINE = "^$"
-COMPATIBLE_MACHINE_zcu102-zynqmp = "zcu102-zynqmp"
-COMPATIBLE_MACHINE_zcu111-zynqmp = "zcu111-zynqmp"
+COMPATIBLE_MACHINE_stratix10 = "stratix10" 
+
+EXCLUDE_FROM_SHLIBS = "1"
 
 PACKAGE_ARCH ?= "${MACHINE_ARCH}"
 
