@@ -4,6 +4,7 @@ SUMMARY = "OpenCPI Base Image"
 
 IMAGE_INSTALL_append = "\
     bash \
+    nfs-utils \
     opencpi-runtime \
 "
 
