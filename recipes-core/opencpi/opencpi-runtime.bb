@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 
 SRC_URI = "file://${MACHINE}"
 
-RDPENDS_${PN} += "glibc"
+RDPENDS_${PN} += "glibc nfs-utils"
 
 FILES_${PN} = "${ROOT_HOME}"
 
