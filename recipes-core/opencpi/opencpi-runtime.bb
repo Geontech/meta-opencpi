@@ -33,5 +33,6 @@ do_compile[noexec] = "1"
 # Copy OpenCPI SD card contents over to /home/root. These come from OpenCPI's CDK.
 fakeroot do_install () {
     install -d 0755 ${D}${ROOT_HOME}/opencpi
-    cp -ar ${S}/${MACHINE}/opencpi/* ${D}${ROOT_HOME}/opencpi/
+    cp -ar ${S}/${MACHINE}/opencpi/ ${D}${ROOT_HOME}/
+    rm -rf ${D}${ROOT_HOME}/.gitignore
 }
